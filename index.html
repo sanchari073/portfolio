@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sanchari Sadhukhan - Data Analyst & Business Analytics Professional. Expertise in Python, SQL, Databricks, and data visualization.">
+    <meta name="keywords" content="Data Analyst, Business Analyst, Data Scientist, Python, SQL, Databricks, Portfolio">
+    <title>Sanchari Sadhukhan | Data Analyst</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">SS</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <a href="https://linkedin.com/in/sanchari-sadhukhan" class="nav-social" target="_blank"
+                        rel="noopener" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="SanchariSadhukhan_DA_Resume.pdf" class="nav-btn" download>Resume</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Background Animation -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hello, I'm</p>
+                <h1 class="hero-name">Sanchari Sadhukhan</h1>
+                <div class="hero-role">
+                    <span class="role-prefix">A </span>
+                    <span class="role-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Transforming raw data into actionable insights. Currently pursuing M.S. in Business Analytics
+                    at UMass Amherst with 2+ years of experience at PepsiCo.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="data-graphic">
+                    <div class="chart-bar" style="--height: 60%"></div>
+                    <div class="chart-bar" style="--height: 85%"></div>
+                    <div class="chart-bar" style="--height: 45%"></div>
+                    <div class="chart-bar" style="--height: 95%"></div>
+                    <div class="chart-bar" style="--height: 70%"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+            <div class="scroll-arrow"></div>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <p class="about-text">
+                        I'm a data-driven professional passionate about uncovering insights that drive business
+                        decisions.
+                        With a strong foundation in <strong>Computer Science</strong> and currently advancing my
+                        expertise through a
+                        <strong>Master's in Business Analytics at UMass Amherst</strong>, I bring a unique blend of
+                        technical
+                        skills and business acumen.
+                    </p>
+                    <p class="about-text">
+                        At <strong>PepsiCo</strong>, I've had the opportunity to design scalable data pipelines,
+                        automate
+                        critical workflows, and implement data quality frameworks that have measurably improved
+                        operational efficiency.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">📍</span>
+                            <span>Amherst, Massachusetts</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎓</span>
+                            <span>UMass Amherst (4.0 GPA)</span>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💼</span>
+                            <span>Ex-PepsiCo Data Analyst</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats fade-in">
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="2">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="30">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Pipeline Efficiency Gain</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number" data-target="1">0</span>
+                        <span class="stat-suffix"></span>
+                        <span class="stat-label">Publication</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3 class="skill-heading">Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">VBA</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">C++</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3 class="skill-heading">Data Visualization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Power BI</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Plotly</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3 class="skill-heading">Cloud & Big Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure DevOps</span>
+                        <span class="skill-tag">Databricks</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">PySpark</span>
+                        <span class="skill-tag">Apache Spark</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3 class="skill-heading">Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQL Server</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3 class="skill-heading">ML & Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">A/B Testing</span>
+                        <span class="skill-tag">Regression</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+                <div class="skill-category fade-in">
+                    <h3 class="skill-heading">Tools & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">Data Analyst</h3>
+                            <span class="timeline-company">PepsiCo GBS</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">August 2023 - August 2025</span>
+                            <span class="timeline-location">Hyderabad, India</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <strong>30% runtime improvement</strong> — Designed scalable data ingestion pipelines
+                                in Databricks using SQL and Python with partitioning and caching strategies.
+                            </li>
+                            <li>
+                                <strong>25% faster releases</strong> — Automated CI/CD workflows in Azure DevOps,
+                                reducing release cycle time in less than 3 months.
+                            </li>
+                            <li>
+                                <strong>40% automation</strong> — Implemented data quality checks in PySpark,
+                                automating validations within 6 months.
+                            </li>
+                            <li>
+                                <strong>70% less manual work</strong> — Created Excel Macros with VBA over a 4-month
+                                period.
+                            </li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span class="tech-tag">Databricks</span>
+                            <span class="tech-tag">Azure DevOps</span>
+                            <span class="tech-tag">PySpark</span>
+                            <span class="tech-tag">SQL</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">VBA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education section" id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">M.S. in Business Analytics</h3>
+                            <span class="timeline-company">University of Massachusetts Amherst</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">August 2025 - Present</span>
+                            <span class="timeline-gpa">GPA: 4.0/4.0</span>
+                        </div>
+                        <p class="timeline-description">
+                            Coursework: Statistics for Business, Python for Business, Database Management Systems, AI
+                            for Business
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3 class="timeline-title">B.S. in Computer Science with Business Systems</h3>
+                            <span class="timeline-company">Vellore Institute of Technology</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="timeline-date">July 2019 - July 2023</span>
+                            <span class="timeline-gpa">GPA: 8.2/10.0</span>
+                        </div>
+                        <p class="timeline-description">
+                            Coursework: Data Science, Statistical Analysis, Business Mathematics, Marketing, Finance
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">Sahayata</h3>
+                    </div>
+                    <p class="project-description">
+                        Full-stack web application that digitizes self-help groups, connecting 500+ users across 50+
+                        groups
+                        with personalized recommendations.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>K-Nearest Neighbor algorithm for recommendations</li>
+                        <li>20% increase in user engagement</li>
+                        <li>500+ users across 50+ groups</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">KNN</span>
+                    </div>
+                </article>
+
+                <article class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">Centralized Information System</h3>
+                    </div>
+                    <p class="project-description">
+                        Course aggregation platform with intelligent recommendations, serving 200+ students and
+                        significantly reducing course search time.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Doc2Vec for intelligent recommendations</li>
+                        <li>15% reduction in search time</li>
+                        <li>Serving 200+ students</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python Flask</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">Doc2Vec</span>
+                    </div>
+                </article>
+
+                <article class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">CollegeBuddy</h3>
+                    </div>
+                    <p class="project-description">
+                        Cross-platform mobile application with 95% code reuse, providing essential college resources
+                        to 300+ active users.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>RESTful API with JWT authentication</li>
+                        <li>95% code reuse across platforms</li>
+                        <li>300+ active users</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Native</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Express.js</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications section" id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <a href="https://www.neuroquantology.com/media/article_pdfs/895-906.pdf" class="publication-card fade-in"
+                target="_blank" rel="noopener">
+                <div class="publication-content">
+                    <h3 class="publication-title">Student Stress Prediction Using Machine Learning</h3>
+                    <p class="publication-authors">
+                        Sai Sri Rekha K, Suhani M, <strong>Sanchari S</strong> &amp; Jaydev J.
+                    </p>
+                    <p class="publication-journal">
+                        <em>NeuroQuantology</em> 2022; 20(14): 895-906.
+                    </p>
+                    <span class="publication-link">View Publication →</span>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Beyond the Data Section -->
+    <section class="beyond-data section" id="beyond-data">
+        <div class="container">
+            <h2 class="section-title">Beyond the Data</h2>
+            <p class="beyond-code-intro fade-in">
+                Life is richer when balanced with diverse passions. Here are the hobbies that fuel my creativity.
+            </p>
+            <div class="beyond-grid">
+                <!-- Card 1: IEEE-IAS -->
+                <div class="hobby-card fade-in">
+                    <div class="hobby-image">
+                        <img src="/Users/sancharisadhukhan/.gemini/antigravity/brain/5f5fae56-417a-448b-80dd-d34b24640184/ieee_leadership_aesthetic_1768691904894.png"
+                            alt="IEEE Event">
+                    </div>
+                    <div class="hobby-content">
+                        <h3 class="hobby-title">IEEE-IAS</h3>
+                        <p class="hobby-desc">
+                            Optimized operations and drove technical engagement through hackathons that expanded
+                            community participation.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 2: LEO NGO -->
+                <div class="hobby-card fade-in">
+                    <div class="hobby-image">
+                        <img src="/Users/sancharisadhukhan/.gemini/antigravity/brain/5f5fae56-417a-448b-80dd-d34b24640184/editorial_writing_aesthetic_1768691917698.png"
+                            alt="Editorial Desk">
+                    </div>
+                    <div class="hobby-content">
+                        <h3 class="hobby-title">LEO NGO</h3>
+                        <p class="hobby-desc">
+                            Spearheaded editorial strategy for monthly publications, reaching and inspiring 1000+
+                            readers.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 3: Cafe Hopping -->
+                <div class="hobby-card fade-in">
+                    <div class="hobby-image">
+                        <img src="/Users/sancharisadhukhan/.gemini/antigravity/brain/5f5fae56-417a-448b-80dd-d34b24640184/cafe_latte_aesthetic_1768691929826.png"
+                            alt="Cafe Hopping">
+                    </div>
+                    <div class="hobby-content">
+                        <h3 class="hobby-title">Cafe Hopping</h3>
+                        <p class="hobby-desc">
+                            I love coffee! Exploring new cafes and finding the perfect latte art is my favorite weekend
+                            activity.
+                        </p>
+                    </div>
+                </div>
+                <!-- Card 4: Shows Watching -->
+                <div class="hobby-card fade-in">
+                    <div class="hobby-image">
+                        <img src="/Users/sancharisadhukhan/.gemini/antigravity/brain/5f5fae56-417a-448b-80dd-d34b24640184/movie_night_aesthetic_1768691941610.png"
+                            alt="Watching Shows">
+                    </div>
+                    <div class="hobby-content">
+                        <h3 class="hobby-title">Binge Watching</h3>
+                        <p class="hobby-desc">
+                            Unwinding with a good series. From sci-fi thrillers to lighthearted comedies, I enjoy a good
+                            story.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+        <div class="container contact-container">
+            <div class="contact-content fade-in">
+                <h2 class="contact-title">Let's Create Something<br>Amazing Together</h2>
+                <p class="contact-text">
+                    I'm currently looking for new opportunities in Data/Business Analytics and Data Science.
+                    Whether you have a question or just want to say hi, my inbox is always open.
+                </p>
+                <div class="contact-actions">
+                    <a href="mailto:ssadhukhan65@gmail.com" class="btn btn-primary btn-lg">
+                        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        Say Hello
+                    </a>
+                    <a href="https://linkedin.com/in/sanchari-sadhukhan" target="_blank" rel="noopener"
+                        class="btn btn-secondary btn-lg">
+                        <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    &copy; 2026 Sanchari Sadhukhan. Built with passion.
+                </p>
+                <div class="footer-links">
+                    <a href="#hero">Back to Top</a>
+                    <a href="SanchariSadhukhan_DA_Resume.pdf" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
